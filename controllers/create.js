@@ -15,7 +15,6 @@ exports.createInvoice = [
 
       let bill = await Bill.create({
         ...body,
-        customerId: "01fd9fad-86e9-4ee1-a68e-02db89620894",
       });
       let bill2 = await Bill.findByPk("3ee6bcf7-6370-4ab0-8df6-cd5a478a7013");
       return res.status(200).json({
